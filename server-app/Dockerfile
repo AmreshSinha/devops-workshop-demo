@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:latest
 
 # Set app directory
 WORKDIR /app
@@ -12,7 +12,8 @@ RUN apt-get install -y netcat-traditional
 
 # Install dependencies
 COPY package.json .
-RUN npm install --production --silent
+COPY yarn.lock .
+RUN yarn install --production --silent
 
 # Copy project files
 COPY . .
