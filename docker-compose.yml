@@ -11,8 +11,8 @@ services:
       - mongo
     depends_on:
       - mongo
-    volumes:
-      - "./server-app/:/app/"
+    # volumes:
+      # - "./server-app/:/app/"
       # - "/app/node_modules"
     environment:
       MONGO_PASS: example
@@ -29,8 +29,8 @@ services:
       - "80:80"
     depends_on:
       - server-app
-    volumes:
-      - "./client-app:/app"
+    # volumes:
+      # - "./client-app:/app"
       # - "/app/node_modules"
     environment:
       PORT: 3000

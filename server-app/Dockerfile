@@ -12,8 +12,8 @@ RUN apt-get install -y netcat-traditional
 
 # Install dependencies
 COPY package.json .
-COPY yarn.lock .
-RUN yarn install --production --silent
+RUN npm install --production --silent
+RUN npm install nodemon -g --silent
 
 # Copy project files
 COPY . .
