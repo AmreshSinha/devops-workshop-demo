@@ -8,7 +8,7 @@ ENV NODE_ENV production
 
 # Add netcat to be able to wait for other services with scripts
 RUN apt-get update
-RUN apt-get install -y netcat-traditional bash
+RUN apt-get install -y netcat-traditional
 
 # Install dependencies
 COPY package.json .
