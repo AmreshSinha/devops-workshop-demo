@@ -13,7 +13,7 @@ Both server and client support live-reload of code.
 docker-compose up
 ```
 
-Server will be accessible at localhost:8000, client at localhost:3000
+Server will be accessible at localhost:8000, client at localhost:3000 (unoptimised), localhost:80 (optimised)
 
 ## Commands
 
